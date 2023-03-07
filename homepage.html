@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+   <script src="https://kit.fontawesome.com/718d67c8f8.js" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">MyMovies</div>
+        <div class="desc">
+        
+            MyMovies app Video, also known simply as Prime Video, is an indinn 
+            subscription video on-demand over-the-top streaming and rental service of Myapp
+             offered as a standalone service or as part of Amazon's Prime subscription.
+              The service primarily distributes films and television series produced by 
+              MyMovies Studios and MGM Holdings or licensed to MyMovies, as MyMovies Originals,
+               with the service also hosting content from other providers, content add-ons,
+             live sporting events, 
+            and video rental and purchasing services
+        
+        </div>
+        
+        <div class="login-form">
+            <div class="form-group">
+                <label for="uname">UserName</label>
+                <input type="email" name="uname" id="email" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="pword">Password</label>
+                <input type="password" name="pword" id="password"  class="form-control">
+            </div>
+                <div class="btn-container">
+                    <!-- <div class="error">{{errorMsg}}</div> -->
+                    <button class="btn btn-danger" onclick="auth()">Login</button>
+                </div>
+               
+                
+            </div>
+        </div>
+        
+        <script>
+            function auth(){
+                var email=document.getElementById('email').value;
+                var password=document.getElementById('password').value;
+            if (email=="mayur@gmail.com"&& password=="mayur123"){
+            window.location.assign("index.html")
+            alert("login Seccesfully")
+            }
+            else("Invalid email")
+            return;
+        }
+        </script>
+</body>
+</html>
